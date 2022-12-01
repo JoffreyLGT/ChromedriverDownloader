@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>JLagut.WebDriverDownloader</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <Title>WebDriverDownloader</Title>
+    <Authors>Joffrey Lagut</Authors>
+    <Description>Automatically download the correct web driver for your Google Chrome or Microsoft Edge version.</Description>
+    <PackageProjectUrl>https://github.com/JoffreyLGT/WebDriverDownloader</PackageProjectUrl>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <RepositoryUrl>https://github.com/JoffreyLGT/WebDriverDownloader</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageId>WebDriverDownloader</PackageId>
+    <IncludeSymbols>True</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Selenium.WebDriver" Version="4.6.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
